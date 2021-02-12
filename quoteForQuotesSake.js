@@ -1,4 +1,4 @@
-
+function quoteMe() {
 let randNum = Math.floor(Math.random()*12)+1;
 
 let randPnum = Math.floor(Math.random()*3)+1;
@@ -19,15 +19,16 @@ const grouchoQuote = ["I'm not crazy about reality, but it's still the only plac
 
 switch (randPnum){
 	case 1 : person = 'Bruce Lee';
-	console.log('Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + bruceQuote[randQnum]);
+	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+bruceQuote[randQnum]+'"';
 	break;
 	case 2 : person = 'Nelson Mandela'
-	console.log('Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + nelsonQuote[randQnum]);
+	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+nelsonQuote[randQnum]+'"';
 	break;
 	case 3 : person = 'Grouch Marx';
-	console.log('Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + grouchoQuote[randQnum]);
+	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+grouchoQuote[randQnum]+'"';
 	break;
 	default : person = 'Nobody';
-};
+}
+}
 
 
