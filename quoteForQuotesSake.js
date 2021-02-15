@@ -19,13 +19,16 @@ const grouchoQuote = ["I'm not crazy about reality, but it's still the only plac
 
 switch (randPnum){
 	case 1 : person = 'Bruce Lee';
-	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+bruceQuote[randQnum]+'"';
+	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!';
+	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+bruceQuote[randQnum]+'"';
 	break;
 	case 2 : person = 'Nelson Mandela'
-	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+nelsonQuote[randQnum]+'"';
+		document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!'; 
+	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+nelsonQuote[randQnum]+'"';
 	break;
 	case 3 : person = 'Grouch Marx';
-	document.getElementById("demo").innerHTML ='Look out for the number: ' + randNum + ' today! And also consider ' + person + ' who once said: ' + '"'+grouchoQuote[randQnum]+'"';
+	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!'; 
+	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+grouchoQuote[randQnum]+'"';
 	break;
 	default : person = 'Nobody';
 }
