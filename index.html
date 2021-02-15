@@ -6,14 +6,16 @@
 <style>
 
 body { text-align: center; }
-h1 { margin-bottom: 1em; color: red;}
+h1 { 
+	font-size: 42px;
+	margin-bottom: 1em; color: red;}
 .button  { 
     border-radius: 60px;
     padding: 1em; 
 	color: #FFFFFF;
 	background-color: #E38690;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
@@ -22,15 +24,38 @@ h1 { margin-bottom: 1em; color: red;}
 .button:visited { color : #CCCCCC; }
 .button:hover { color : #965251; background-color: #F7DEE1; }
 
+#luckyarea{
+	font-size: 32px;
+	font-style: bold;
+	color: black;
+}
+#personarea{
+	font-size: 24px;
+	font-style: bold;
+	color: black;
+}
+#quotearea{
+	font-size: 24px;
+	font-style: bold;
+	color: black;
+	font-style: italic;
+}
+
+p{
+	font-size: 24px;
+	color: red;
+}
+
 </style>
 </head>
 <body>
 	<script src="quoteForQuotesSake.js"></script>
 		
 <h1>For Quotes Sake!</h1>
-<p>Need a lucky number? <br>Want to see the <i>'Quote of the day?'</i><br><br>Go on...</p><br>
+<p>Need a lucky number?... Want to see the <i>'Quote of the day?'</i><br><br>Go on!</p><br>
 <a class="button" onclick="quoteMe()">You know you want to!</a><br><br>
-<p id="luckyarea">Wait...</p> 
-<p id="quotearea">just wait...</p>
+<p id="luckyarea"></p> 
+<p id="personarea"></p>
+<p id="quotearea"></p>
 </body>
 </html>

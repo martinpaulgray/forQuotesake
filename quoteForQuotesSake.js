@@ -19,16 +19,19 @@ const grouchoQuote = ["I'm not crazy about reality, but it's still the only plac
 
 switch (randPnum){
 	case 1 : person = 'Bruce Lee';
-	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!';
-	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+bruceQuote[randQnum]+'"';
+	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today.';
+	document.getElementById("personarea").innerHTML = 'Also consider ' + person + ' who once said: ';
+	document.getElementById("quotearea").innerHTML = '"'+bruceQuote[randQnum]+'"';
 	break;
 	case 2 : person = 'Nelson Mandela'
-		document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!'; 
-	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+nelsonQuote[randQnum]+'"';
+		document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today.'; 
+	document.getElementById("personarea").innerHTML = 'Also consider ' + person + ' who once said: ';
+	document.getElementById("quotearea").innerHTML ='"'+nelsonQuote[randQnum]+'"';
 	break;
-	case 3 : person = 'Grouch Marx';
-	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today!'; 
-	document.getElementById("quotearea").innerHTML = 'And also consider ' + person + ' who once said: ' + '"'+grouchoQuote[randQnum]+'"';
+	case 3 : person = 'Groucho Marx';
+	document.getElementById("luckyarea").innerHTML ='Look out for the number: ' + randNum + ' today.'; 
+	document.getElementById("personarea").innerHTML = 'Also consider ' + person + ' who once said: ';
+	document.getElementById("quotearea").innerHTML ='"'+grouchoQuote[randQnum]+'"';
 	break;
 	default : person = 'Nobody';
 }
